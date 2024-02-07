@@ -1,0 +1,11 @@
+[Unit]
+Description=My background task
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/beria/Documents/FINAL PROJECT/test2.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
